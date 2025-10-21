@@ -1,6 +1,0 @@
-import { Serie } from './serie.js';
-export var dataSeries = [
-    new Serie(1, 'El increíble mundo de Gumball', 'HBO', 5, 'serie de animación británico-estadounidense de comedia familiar, caracterizada por su original mezcla de distintos elementos de animación y elementos reales, que fue creada por el francés Ben Bocquelet.', 'https://es.wikipedia.org/wiki/The_Amazing_World_of_Gumball', 'https://i.pinimg.com/1200x/66/29/c1/6629c1952078c39d44bd2990f9ee7295.jpg'),
-    new Serie(2, 'Bojack Horseman', 'Netflix', 6, 'BoJack Horseman es un olvidado actor que supo vivir sus días de gloria gracias a una comedia televisiva, y que se enfrenta a las más duras crisis existenciales y adicciones mientras intenta volver a las grandes ligas.', 'https://www.netflix.com/watch/70300800?source=35', 'https://i.pinimg.com/736x/04/31/13/043113015b2145ccfd45aeca3775632f.jpg'),
-    new Serie(3, 'Rick y Morty', 'Netflix', 8, 'Después de haber estado desaparecido durante casi 20 años, Rick Sánchez llega de imprevisto a la puerta de la casa de su hija Beth y se va a vivir con ella y su familia utilizando el garaje como su laboratorio personal.', 'https://www.netflix.com/co/title/80014749', 'https://i.pinimg.com/736x/b4/1b/4f/b41b4ff4ca4d5a6cad8bb2acdb8ffd26.jpg')
-];

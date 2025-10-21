@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller TypeScript 1</title>
+    <title>Taller TypeScript 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
     <header class="title-container py-3 text-white">
-        <div class="container"></div>
-        <h1 class="mb-1">Series de tv</h1>
-        </div>
+        <div class="container">
+        <h1 class="mb-1">Series de tv</h1></div>
     </header>
     
     <main class="container my-4">
-        <table class = "table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Canal</th>
-                    <th>Temporadas</th>
-                </tr>
-            </thead>
-            <tbody id="series"></tbody>
-        </table>
+        <div class="row">
+            <div class="col-md-7">
+                <table class = "table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Canal</th>
+                            <th>Temporadas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series"></tbody>
+                </table>
+                <div id="avg-seasons" class="font-weight-bold"></div>
+            </div>
+
+            <!-- ahora la carta de detalle que va oculta con d-none -->
+             <div class="col-md-5">
+                <div id="detail-card" class="card d-none">
+                    <img id="detail-image" class="card-img-top d-none" alt="Serie poster">
+                    <div class="card-body">
+                        <h5 id="detail-title" class="card-title"></h5>
+                            <p id="detail-description" class="card-text"></p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Canal:</strong><span id="detail-channel"></span></li>
+                                <li class="list-group-item"><strong>Temporada:</strong><span id="detail-seasons"></span></li>
+                            </ul>
+                            <a id="detail-link" href="#" class="btn btn-primary d-none" target="_blank" rel="noopener">Mas informacion</a>
+                            <button id="detail-close" class="btn btn-secondary ml-2">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+        </div>
+    </main>
 
 
     <!-- ahora queiero cargar los compilados que se cargaron en ewl modulo ES6 -->
-     <script type="module" src="./scripts/serie.js"></script>
-     <script type="module" src="./scripts/data.js"></script>
-     <script type="module" src="./scripts/main.js"></script>
+     <script type="module" src="./dist/main.js"></script>
 
 </body>
 </html>
